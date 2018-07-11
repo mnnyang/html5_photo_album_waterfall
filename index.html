@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>瀑布流相册</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/jquery.lazyload.js"></script>
+</head>
+<body>
+
+<div class="header">
+    <span class="return-btn fa fa-chevron-left  fa-lg"> 首页</span>
+    <!--<span class="upload fa">上传</span>-->
+</div>
+
+<div class="content">
+    <div class="content-wrapper">
+        <div class="title-wrapper">
+            <h1 class="title">相 册</h1>
+
+            <div id="menu" class="menu">
+                <span id="current-cate">全部</span>
+                <button class=" fa fa-th"></button>
+            </div>
+            <div id="menu-list" class="menu-list">
+                <div class="menu-item menu-selected">全部</div>
+                <div class="menu-item">动漫</div>
+                <div class="menu-item">二次元</div>
+                <div class="menu-item">基佬</div>
+                <div class="menu-item">胖次</div>
+                <div class="menu-item">嘤嘤嘤</div>
+            </div>
+        </div>
+
+        <div class="photo-list">
+            <div class="photo-box">
+                <img src="images/15832164_p0.jpg">
+
+                <!--<div class="photo-info">-->
+                <!--<div class="info-wrapper">-->
+                <!--图片信息描述-->
+                <!--图片信息描述-->
+                <!--图片信息描述-->
+                <!--图片信息描述图片信息描述-->
+                <!--</div>-->
+                <!--</div>-->
+            </div>
+            <div class="photo-box"><img class="lazy" data-original="images/16984063_p0.jpg"></div>
+            <div class="photo-box"><img class="lazy" data-original="images/17380373_p0.jpg"></div>
+            <div class="photo-box"><img class="lazy" data-original="images/17942797_p0.jpg"></div>
+            <div class="photo-box"><img class="lazy" data-original="images/18359180_p0.jpg"></div>
+            <div class="photo-box"><img class="lazy" data-original="images/20877593_p0.jpg"></div>
+            <div class="photo-box"><img class="lazy" data-original="images/23779859_p0.jpg"></div>
+            <div class="photo-box"><img class="lazy" data-original="images/55133525_p0.jpg"></div>
+            <div class="photo-box"><img class="lazy" data-original="images/57090512_p0.png"></div>
+            <div class="photo-box"><img class="lazy" data-original="images/57263510_p0.png"></div>
+            <div class="photo-box"><img class="lazy" data-original="images/57570276_p0.jpg"></div>
+            <div class="photo-box"><img class="lazy" data-original="images/57642298_p0.jpg"></div>
+            <div class="photo-box"><img class="lazy" data-original="images/57759985_p0.jpg"></div>
+            <div class="photo-box"><img class="lazy" data-original="images/57808612_p0.jpg"></div>
+            <div class="photo-box"><img class="lazy" data-original="images/58148861_p0.jpg"></div>
+            <div class="photo-box"><img class="lazy" data-original="images/58161254_p0.jpg"></div>
+            <div class="photo-box"><img class="lazy" data-original="images/58222088_p0.jpg"></div>
+            <div class="photo-box"><img class="lazy" data-original="images/58272931_p0.jpg"></div>
+            <div class="photo-box"><img class="lazy" data-original="images/58320648_p0.png"></div>
+            <div class="photo-box"><img class="lazy" data-original="images/59073477_p0.jpg"></div>
+            <div class="photo-box"><img class="lazy" data-original="images/59665299_p0.jpg"></div>
+            <div class="photo-box"><img class="lazy" data-original="images/59715394_p0.jpg"></div>
+            <div class="photo-box"><img class="lazy" data-original="images/59740059_p0.jpg"></div>
+            <div class="photo-box"><img class="lazy" data-original="images/59756071_p0.png"></div>
+            <div class="photo-box"><img class="lazy" data-original="images/59836302_p0.jpg"></div>
+            <div class="photo-box"><img class="lazy" data-original="images/60223272_p0.jpg"></div>
+            <div class="photo-box"><img class="lazy" data-original="images/60268669_p0.jpg"></div>
+            <div class="photo-box"><img class="lazy" data-original="images/60294292_p0.jpg"></div>
+            <div class="photo-box"><img class="lazy" data-original="images/60350538_p0.jpg"></div>
+            <div class="photo-box"><img class="lazy" data-original="images/60392952_p0.jpg"></div>
+            <div class="photo-box"><img class="lazy" data-original="images/60433774_p0.jpg"></div>
+            <div class="photo-box"><img class="lazy" data-original="images/60476821_p0.jpg"></div>
+            <div class="photo-box"><img class="lazy" data-original="images/60562461_p0.jpg"></div>
+            <div class="photo-box"><img class="lazy" data-original="images/61209135_p0.png"></div>
+            <div class="photo-box"><img class="lazy" data-original="images/61303644_p0.png"></div>
+            <div class="photo-box"><img class="lazy" data-original="images/61351842_p0.jpg"></div>
+            <div class="photo-box"><img class="lazy" data-original="images/61590960_p0.jpg"></div>
+            <div class="photo-box"><img class="lazy" data-original="images/61745418_p0.jpg"></div>
+            <div class="photo-box"><img class="lazy" data-original="images/61974135_p0.png"></div>
+        </div>
+
+
+    </div>
+</div>
+
+<div class="big-box">
+
+
+</div>
+
+</body>
+
+<script>
+    $(function () {
+
+        $("img.lazy").lazyload({effect: "fadeIn"});
+
+
+        $(document).bind('click', function () {
+            $('.menu-list').css('display', 'none');
+        });
+
+
+        var menu_list = $('#menu-list');
+        var current = $('#current-cate');
+
+        var time = 150;
+        $('#menu').on('click', function (e) {
+            menu_list.stop();
+
+            if (menu_list.css('display') !== 'none') {
+                menu_list.slideUp(time, function () {
+                    menu_list.hide();
+                })
+            } else {
+                menu_list.slideDown(time, function () {
+                    menu_list.show();
+                })
+            }
+
+            stopPropagation(e);
+        });
+
+        $('.menu-item').on('click', function (e) {
+            $('.menu-item').removeClass('menu-selected');
+            $(this).addClass('menu-selected');
+
+            menu_list.stop();
+            setTimeout(function () {
+                menu_list.hide();
+            }, 100);
+
+            current.html($(this).html());
+
+            stopPropagation(e);
+        });
+    });
+
+    function stopPropagation(e) {
+        if (e.stopPropagation)
+            e.stopPropagation();
+        else
+            e.cancelBubble = true;
+    }
+
+    function loadImagesStatus() {
+        var images = $('.photo-box img');
+
+        var allComplete = true;
+
+        var timer = setInterval(function () {
+
+            images.each(function (k, v) {
+                console.log(v.complete);
+
+                if (v[1].complete == false) {
+                    allComplete = false;
+                }
+            })
+
+        }, 200);
+
+        if (allComplete) {
+            alert("全部加载完成");
+            clearInterval(timer)
+        }
+    }
+</script>
+</html>
+
